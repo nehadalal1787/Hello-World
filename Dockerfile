@@ -7,4 +7,5 @@ FROM maven:3-openjdk-18-slim
 WORKDIR /application/
 COPY --from=maven /build/target/*.jar ./
 RUN ls /application/
+EXPOSE 8080
 ENTRYPOINT ["java","-jar","*.jar"]
