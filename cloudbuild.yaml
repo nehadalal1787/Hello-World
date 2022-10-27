@@ -8,4 +8,4 @@ steps:
   # Docker Push
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 
-           'us-central1-docker.pkg.dev/${PROJECT_ID}/app-engine-tmp/myimage']
+           'us.gcr.io/${PROJECT_ID}/app-engine-tmp/myimage']
